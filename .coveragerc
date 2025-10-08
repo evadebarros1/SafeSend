@@ -1,0 +1,21 @@
+[run]
+# Limit coverage to your package
+source = safesend
+
+# Omit files you don't want counted
+omit =
+    safesend/__init__.py
+    safesend/main.py:*main()*  # optional: exclude the CLI main function
+    tests/*
+
+[report]
+# Exclude files or lines from report
+exclude_lines =
+    # Ignore CLI entry points
+    if __name__ == .__main__.:
+
+    # Ignore pragma comments
+    pragma: no cover
+
+# Show missing lines for easier debugging
+show_missing = True
