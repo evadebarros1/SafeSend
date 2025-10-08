@@ -67,4 +67,6 @@ def cli_in_out():
 
 def main():
     cli_in_out()
-main()
+
+if __name__ == "__main__":
+    main()
